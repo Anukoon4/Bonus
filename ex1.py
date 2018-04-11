@@ -1,11 +1,9 @@
 from flask import Flask, request
 from flask_restful import Resource ,Api, reqparse
-from flask_cors import CORS
-import json,cmath
+import cmath
 
 app= Flask(__name__)
 api = Api(app)
-CORS(app)
 
 parser = reqparse.RequestParser()
 parser.add_argument('data1')
